@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#B01E31" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center|left">
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Upload"
+            android:textSize="12dp">
+        </Button>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/buttonDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="521dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+        <ListView
+            android:id="@+id/mediaListView"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"></ListView>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/listDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

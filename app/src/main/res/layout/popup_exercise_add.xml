@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/actionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#B01E31" />
+
+
+    <EditText
+        android:id="@+id/editNameView"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:textSize="20dp"
+        android:hint="Exercise Name"></EditText>
+
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/indexTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text=" Slot"
+            android:textSize="20dp"
+            android:layout_weight="20"></TextView>
+
+        <Spinner
+            android:id="@+id/indexSpinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="left"/>
+    </LinearLayout>!-->
+
+    <View
+        android:id="@+id/slotDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <!--<HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="55dp">-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/attributesButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="25"
+                android:text="Attributes"
+                android:textSize="11dp"
+                android:layout_gravity="center">
+            </Button>
+
+            <Button
+                android:id="@+id/notesButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="25"
+                android:text="Notes"
+                android:textSize="11dp"
+                android:layout_gravity="center">
+            </Button>
+
+            <Button
+                android:id="@+id/mediaButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="25"
+                android:text="Media"
+                android:textSize="11dp"
+                android:layout_gravity="center">
+            </Button>
+
+            <Button
+                android:id="@+id/feedbackButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="25"
+                android:text="Feedback"
+                android:textSize="11dp"
+                android:layout_gravity="center">
+            </Button>
+
+        </LinearLayout>
+    <!--</HorizontalScrollView>!-->
+
+    <View
+        android:id="@+id/buttonDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="Attributes"
+            android:textSize="20dp"
+            android:layout_weight="80"
+            android:paddingLeft="10dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="20"
+            android:text="Add"
+            android:textSize="11dp"
+            android:layout_gravity="center">
+        </Button>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/headerDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+        </ProgressBar>
+
+        <ListView
+            android:id="@+id/attributesListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <ListView
+            android:id="@+id/mediaListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </ListView>
+
+        <EditText
+            android:id="@+id/notesEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:gravity="top|left"
+            android:textSize="20dp"
+            android:maxLength="1000"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/feedbackEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:gravity="top|left"
+            android:textSize="20dp"
+            android:maxLength="1000"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/listDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textSize="11dp"
+        android:text="Delete Exercise"
+        android:layout_gravity="">
+    </Button>
+
+</LinearLayout>

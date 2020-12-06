@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#B01E31" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center|left">
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Upload"
+            android:textSize="12dp">
+        </Button>
+
+        <Button
+            android:id="@+id/selectButton"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="Select from Library"
+            android:textSize="12dp">
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/attributesListView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    </ListView>
+
+    <View
+        android:id="@+id/listDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

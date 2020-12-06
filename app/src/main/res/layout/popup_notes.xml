@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/notesTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text="Notes">
+    </TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#B01E31" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/notesEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="112dp"
+        android:background="@drawable/back"
+        android:gravity="top|left"
+        android:textSize="20dp"
+        android:maxLength="500"/>
+
+</LinearLayout>
